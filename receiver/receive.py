@@ -45,7 +45,6 @@ def receive_data():
                     filename = write_file(decoded)
                 except:
                     print("Invalid transmission received. Unable to process.")
-                    print(buffer)
                 buffer = b''
             else:
                 print("Serial port timeout. No files received.")
