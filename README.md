@@ -44,7 +44,3 @@ receive.py takes no arguments. The code runs in an infinite while loop. To run,
 `python receive.py`
 
 To halt, hold down "Ctrl + c"
-
-PERFORMANCE
-
-The maximum baud rate I was able to successfully transmit data at was 230400 bits/s. Beyond that, I just received garbage data (a string of null characters (\x00). Consequently, I wasn't able to test the validity of the forward error correction (zfec) since at higher baud rates, only 0s are being sent.
